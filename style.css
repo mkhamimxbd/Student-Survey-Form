@@ -1,0 +1,160 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dbe2ef88;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #112D4E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0 20px 0;
+}
+
+.desc {
+  text-align: center;
+  margin: 0 0 60px 0;
+  font-size: 12px;
+  color: #464646b4;
+}
+
+.survey-form {
+  background-color: #3f71afa4;
+  color: #fffcf5;
+  border-radius: 14px;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px 0;
+}
+
+fieldset {
+  margin: 18px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stream-field,
+.fav-subject-field {
+  display: flex;
+}
+
+.stream-field option,
+.foreign-student-field label,
+.fav-subject-field option,
+.improve-field label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #112D4E;
+}
+
+.text-input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  padding: 10px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 10px 0 0 0;
+}
+
+.stream-select,
+.fav-subject-select {
+  font-size: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.foreign-student-field,
+.improve-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.foreign-student-field div,
+.improve-field div {
+  margin-top: 18px;
+  display: flex;
+}
+
+.foreign-student-field div label {
+  margin: 4px 0 0 8px;
+}
+
+.improve-field div label {
+  margin: 2px 0 0 8px;
+}
+
+.feedback {
+  width: 100%;
+  min-height: 150px;
+  overflow-x: hidden;
+  resize: vertical;
+  white-space: nowrap;
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 6px;
+}
+
+.submit {
+  font-size: 16px;
+  padding: 10px;
+  margin: 0 29px 50px 29px;
+  color: #F9FAFB;
+  font-weight: 700;
+  background-color: #22C55E;
+  border: 1px solid #dbe2ef;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #1cb654;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #1ea750;
+  }
+}
+
+.text-input:focus, 
+.feedback:focus,
+select:focus {
+  outline: none;
+  border: none;
+}
+
+.improve-side-text {
+  font-size: 12px;
+  margin: 4px;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+
+@media (max-width: 780px) {
+  .survey-form {
+    width: 550px;
+  }
+}
+
+@media (max-width: 590px) {
+  .survey-form {
+    width: 350px;
+  }
+}

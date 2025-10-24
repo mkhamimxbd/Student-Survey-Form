@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title" class="title">Student Survey Form</h1>
+
+  <form id="survey-form" class="survey-form">
+    <fieldset class="name-field text-input-field">
+      <label id="name-label" class="name-label">Name</label>
+      <input id="name" class="name text-input" type="text" placeholder="Enter your Name" required>
+    </fieldset>
+    <fieldset class="email-field text-input-field">
+      <label id="email-label" class="email-label">Email</label>
+      <input id="email" class="email text-input" type="email" placeholder="Enter your Email" required>
+    </fieldset>
+    <fieldset class="number-field text-input-field">
+      <label id="number-label" class="number-label">Age</label>
+      <input id="number" class="number text-input" type="number" min="12" max="99" placeholder="Enter your Age" requied>
+    </fieldset>
+
+    <fieldset class="stream-field">
+      <legend>What's your Stream?</legend>
+      <select name="stream-dropdown" id="dropdown" class="stream-select">
+        <option value="" disabled selected>Select your stream</option>
+        <option value="science">Science</option>
+        <option value="commerce">Commerce</option>
+        <option value="arts">Arts</option>
+        <option value="others">Others</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="foreign-student-field">
+      <legend>Are you a foreign student?</legend>
+      <div>
+        <input type="radio" name="foreign" value="yes" id="foreign-yes">
+        <label name="foreign" for="foreign-yes">Yes</label>
+      </div>
+      <div>
+        <input type="radio" name="foreign" value="no" id="foreign-no">
+        <label for="foreign-no">No</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="fav-subject-field">
+      <legend>What's Your favorite Subject?</legend>
+      <select name="fav-subject-dropdown" class="fav-subject-select">
+        <option value="" disabled selected>Select your Favorite Subject</option>
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="science">Science</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="biology">Biology</option>
+        <option value="religion-studies">Religion Studies</option>
+        <option value="history">History</option>
+        <option value="others">Others</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="improve-field">
+      <legend>What would you like to see improved? <span class="improve-side-text">(Check all that
+          apply)</span></legend>
+      <div>
+        <input name="classroom" value="classroom" type="checkbox" id="classroom">
+        <label for="classroom">Classroom</label>
+      </div>
+      <div>
+        <input name="teachers" value="teachers" type="checkbox" id="teachers">
+        <label for="teachers">Teachers</label>
+      </div>
+      <div>
+        <input name="guide-books" value="guide-books" type="checkbox" id="guide-books">
+        <label for="guide-books">Guide Books</label>
+      </div>
+      <div>
+        <input name="air-conditioning" value="air-conditioning" type="checkbox" id="air-conditioning">
+        <label for="air-conditioning">Air Conditioning</label>
+      </div>
+      <div>
+        <input name="library" value="library" type="checkbox" id="library">
+        <label for="library">Library</label>
+      </div>
+      <div>
+        <input name="online-classes" value="online-classes" type="checkbox" id="online-classes">
+        <label for="online-classes">Online Classes</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="feedback-field">
+      <legend>Any suggestions?</legend>
+      <textarea name="feedback" id="feedback" class="feedback" placeholder="Enter your suggestion here..."></textarea>
+    </fieldset>
+
+    <button type="submit" id="submit" class="submit">Submit</button>
+
+  </form>
+
+  <p id="description" class="desc">Thank you for taking our survey!</p>
+
+</body>
+
+</html>
